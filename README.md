@@ -1,17 +1,24 @@
-# nautilus-mediainfo
-View media information from the properties tab
+# Nautilus Mediainfo GTK4
 
-## Uses mediainfo lib (https://mediaarea.net/en/MediaInfo)
+A Nautilus (GNOME Files) extension that displays detailed metadata for multimedia files.
+
+## Dependencies
+
+- nautilus-python
+- libmediainfo
+- python-mediainfodll
+- python-gobject
 
 ## Installation
 
-ppa:caldas-lopes/ppa
-
-or
-
-https://github.com/linux-man/nautilus-mediainfo/releases
-
-### Translations from MediaInfo(thanks to @seigneurfuo):
-
-ar, be, bg, ca, cs, da, de, en, es, eu, fa, fr, gl, gr, hr, hu, hy, it, ja, ka, ko, lt, nl, pl, pt\_BR, pt, ro, ru, sk, sq, sv, th, tr, uk, zh\_CN, zh\_HK and zh\_TW
-
+You can manually install this extension with a single command:
+```sh
+curl -L https://github.com/thiago-g/nautilus-mediainfo-gtk4/nautilus-mediainfo-gtk4.py -o ~/.local/share/nautilus-python/extensions/nautilus-mediainfo-gtk4.py && chmod +x ~/.local/share/nautilus-python/extensions/nautilus-mediainfo-gtk4.py
+```
+Or 
+```sh
+git clone https://github.com/thiago-g/nautilus-mediainfo-gtk4
+cd nautilus-mediainfo-gtk4
+cp nautilus-mediainfo-gtk4.py ~/.local/share/nautilus-python/extensions/ 
+chmod +x  ~/.local/share/nautilus-python/extensions/nautilus-mediainfo-gtk4.py 
+```
