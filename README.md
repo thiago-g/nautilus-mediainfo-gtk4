@@ -25,5 +25,5 @@ chmod +x  ~/.local/share/nautilus-python/extensions/nautilus-mediainfo-gtk4.py
 ```
 
 ## Screenshots
-![Video Example](images/screenshot1.png)
-![Image Example](images/screenshot2.png)
+![Video Example](images/screenshot1.jpg)
+![Image Example](images/screenshot2.jpg)
