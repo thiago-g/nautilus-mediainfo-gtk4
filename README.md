@@ -6,6 +6,7 @@ A Nautilus (GNOME Files) extension that displays detailed metadata for multimedi
 
 - nautilus-python
 - libmediainfo
+- libnotify
 - python-mediainfodll
 - python-gobject
 

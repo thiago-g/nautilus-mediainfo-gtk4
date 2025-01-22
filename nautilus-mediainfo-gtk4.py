@@ -1,5 +1,6 @@
 # Nautilus Mediainfo GTK4 - A Nautilus extension that displays detailed metadata for multimedia files
-# Copyright (C) 2025 Thiago Gobatto <tggt@pm.me>
+# Copyright (C) 2018, Caldas Lopes    <joao.caldas.lopes@gmail.com> 
+#               2025, Thiago Gobatto  <tggt@pm.me>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
