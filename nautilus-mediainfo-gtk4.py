@@ -45,6 +45,11 @@ class MediainfoExtension(GObject.GObject, Nautilus.MenuProvider):
             return []
 
         file = files[0]
+        mime_type = file.get_mime_type()
+
+        # Check if the file is a multimedia file
+        if not (mime_type.startswith('video/') or mime_type.startswith('audio/') or mime_type.startswith('image/')):
+            return []
         filename = unquote(file.get_location().get_path())
         
         item = Nautilus.MenuItem(
@@ -93,7 +98,8 @@ class MediainfoExtension(GObject.GObject, Nautilus.MenuProvider):
         grid.set_column_spacing(16)
         grid.set_row_spacing(4)
         grid.set_margin_start(10)  # Add left padding of 10 pixels
-        grid.set_margin_top(10)  # Add space above the title
+        grid.set_margin_end(10)  # Add right padding of 10 pixels
+        grid.set_margin_top(10)  # Add top padding of 10 pixels
         scrolled_window.set_child(grid)
 
         top = 0
